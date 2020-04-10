@@ -1,0 +1,19 @@
+@media only screen and (min-width : 1024px){
+
+    .sun-container{
+        animation: sun-move 36s infinite ease-in-out;
+    }
+
+    @keyframes sun-move {
+        from {
+            transform: translate(-330px, 0);
+        }
+
+        to{
+            transform: translate(calc(330px + 100vw), 0);
+        }
+    }
+}
+
+/* cover the sun container on a div and set as absolute to it doesn't maniplute the screen width */
+

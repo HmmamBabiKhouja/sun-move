@@ -34,69 +34,24 @@ body{
 }
 
 .wave1{
-    left: -135px;
-    top: -135px;
+    left: -150px;
+    top: -150px;
     position: absolute;
     width: 300px;
     height: 300px;
     background-color: #e6c94d;
     border-radius: 50%;
     z-index: 1;
-    animation: wave1-move 45s infinite linear;
-}
-
-.wave2 {
-    left: -135px;
-    top: -135px;
-    position: absolute;
-    width: 330px;
-    height: 330px;
-    background-color: #ecd77a;
-    border-radius: 50%;
-    z-index: 0;
-    animation: wave2-move 30s infinite linear;
+    animation: wave1-move 12s infinite ease-in-out;
 }
 
 @keyframes wave1-move {
-
     0% {
         box-shadow: 0px 15px 14px 4px #e6c94d;
     }
 
-    10% {
-        box-shadow: 3px 12px 18px 8px #e6c94d;
-    }
-
-    20% {
-        box-shadow: 6px 9px 26px 16px #e6c94d;
-    }
-
-    30% {
-        box-shadow: 9px 6px 34px 24px #e6c94d;
-    }
-
-    40% {
-        box-shadow: 12px 3px 42px 32px #e6c94d;
-    }
-
     50% {
         box-shadow: 15px 0px 40px 40px #e6c94d;
-    }
-
-    60% {
-        box-shadow: 12px 3px 42px 32px #e6c94d;
-    }
-
-    70% {
-        box-shadow: 9px 6px 34px 24px #e6c94d;
-    }
-
-    80% {
-        box-shadow: 6px 9px 26px 16px #e6c94d;
-    }
-
-    90% {
-        box-shadow: 3px 12px 18px 8px #e6c94d;
     }
 
     100% {
@@ -104,6 +59,17 @@ body{
     }
 }
 
+.wave2 {
+    left: -165px;
+    top: -165px;
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    background-color: #ecd77a;
+    border-radius: 50%;
+    z-index: 0;
+    animation: wave2-move 6s infinite ease-in-out;
+}
 
 @keyframes wave2-move{
 
@@ -111,55 +77,15 @@ body{
         box-shadow:15px 0px 14px 4px #ecd77a;
     }
 
-    10%{
-        box-shadow:12px 3px 18px 8px #ecd77a;
-    }
-
-    20%{
-        box-shadow:9px 6px 26px 16px #ecd77a;
-    }
-
-    30%{
-        box-shadow:6px 9px 34px 24px #ecd77a;
-    }
-
-    40%{
-        box-shadow:3px 12px 42px 32px #ecd77a;
-    }
-
     50%{
         box-shadow:0px 15px 40px 40px #ecd77a;
-    }
-
-    60%{
-        box-shadow:3px 12px 42px 32px #ecd77a;
-    }
-
-    70%{
-        box-shadow:6px 9px 34px 24px #ecd77a;
-    }
-
-    80%{
-        box-shadow:9px 6px 26px 16px #ecd77a;
-    }
-
-    90%{
-        box-shadow:12px 3px 18px 8px #ecd77a;
     }
 
     100%{
         box-shadow:15px 0px 14px 4px #ecd77a;
     } 
 
-    /* from{
-        box-shadow:15px 15px 10px 0px #ecd77a;
-    }
-
-    to{
-        box-shadow: 15px 15px 30px 50px #ecd77a;
-    } */
 }
-
 
 .home-center{
     position: absolute;
