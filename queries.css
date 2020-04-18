@@ -1,16 +1,20 @@
 @media only screen and (min-width : 1024px){
 
     .sun-container{
-        animation: sun-move 36s infinite ease-in-out;
+        position: fixed;
+        left: 0;
+        transform: translate(-100%, 0);
+        animation: sun-move 60s infinite ease-in-out;
     }
+
 
     @keyframes sun-move {
         from {
-            transform: translate(-330px, 0);
+            transform: translate(-240px, 0);
         }
 
         to{
-            transform: translate(calc(330px + 100vw), 0);
+            transform: translate(calc(240px + 100vw), 0);
         }
     }
 }
