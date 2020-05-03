@@ -13,11 +13,20 @@ body{
     width: 100vw;
     font-family: 'Cairo', sans-serif;
     font-size: 18px;
+    overflow-x: hidden;
+    display: flex;
 }
+
+
+
+/*****************
+    THE SUN    
+*****************/
 
 .sun-container {
     position: relative;
     display: flex;
+    right: 100%;
 }
 
 .sun,
@@ -88,33 +97,60 @@ border-radius: 50%;
 
 }
 
+/******************
+    HOME PAGE    
+******************/
+
 .home-center{
-    position: absolute;
-    top: 55%;
-    right: 50%;
-    transform: translate(50%, -70%);
+    justify-self: center;
+    align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
+    margin: 0 auto;
 }
 
 h1{
-    direction: rtl;
     margin-bottom: 20px;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
-.link,
-.link:visited {
+.btns-group{
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+}
+
+.btn,
+.btn:visited {
     display: inline-block;
     text-decoration: none;
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    color: #000000;
-    width: 60%;
-    padding: 5px 0;
+    padding: 10px 25px;
     border-radius: 50px;
     cursor: pointer;
     text-align: center;
     font-size: 1.2rem;
+    text-align: center;
+    vertical-align: center;
+}
+
+.btn-assential {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #000000;
+}
+
+.btn-ghost {
+    border: 1px solid #ffffff;
+    color:#ffffff;
+}
+
+.btn-ghost:hover,
+.btn-assential:hover {
+    background-color: #e6e6e6;
+    border: 1px solid #e6e6e6;
+    color: #000000;
+    transition: 0.8s;
 }

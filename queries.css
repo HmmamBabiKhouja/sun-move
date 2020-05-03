@@ -1,12 +1,33 @@
 @media only screen and (min-width : 1024px){
 
+    body{
+        font-size: 24px;
+    }
+
+    .home-center {
+        width:42vw
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .btns-group {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .btn,
+    .btn:visited {
+        font-size: 1.4rem;
+    }
+
     .sun-container{
         position: fixed;
         left: 0;
         transform: translate(-100%, 0);
-        animation: sun-move 60s infinite ease-in-out;
+        animation: sun-move 90s infinite ease-in-out;
     }
-
 
     @keyframes sun-move {
         from {
