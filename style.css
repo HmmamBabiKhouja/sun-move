@@ -29,6 +29,17 @@ body{
     position: relative;
     display: flex;
     right: 100%;
+    animation: sun-move 45s infinite ease-out;
+}
+
+@keyframes sun-move {
+    from {
+        transform: translate(-240px, 0);
+    }
+
+    to{
+        transform: translate(calc(240px + 100vw), 0);
+    }
 }
 
 .sun,
@@ -112,21 +123,23 @@ border-radius: 50%;
     width: 100vw;
     height: 30vh;
     margin: 0 auto;
-    transform: translateY(80px);
+    transform: translateY(60px);
 }
 
 h1{
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     margin-bottom: 25px;
     font-weight: 700;
 }
 
 .first-message{
+    font-family: 'Aref Ruqaa', serif;
     font-size: 1.5rem;
     margin-bottom:10px ;
 }
 
 .second-message{
+    font-family: 'Aref Ruqaa', serif;
     font-size: 1.3rem;
 }
 
@@ -147,56 +160,56 @@ h1{
 
 .cloud1{
     top:0;
-    opacity: 0.8;
+    opacity: 0.9;
     width: 200px;
     height: 150px; 
-    animation: cloud1-move 20s infinite ease;
+    animation: cloud1-move 22s infinite ease-in-out;
 }
 
 @keyframes cloud1-move {
     
-    0%{
-        left: calc(360px - 400px);
+    from {
+        transform: translate(-200px, 0);
     }
 
-    100%{
-        left: calc(360px + 400px);
+    to{
+        transform: translate(calc(200px + 100vw), 0);
     }
 }
 
 .cloud2{
-    top: 110px;
-    opacity: 0.6;
+    top: 90px;
+    opacity: 0.8;
     width: 180px;
     height: 140px;
-    animation: cloud2-move 17s infinite linear reverse;
+    animation: cloud2-move 16s infinite linear reverse;
 }
 
 @keyframes cloud2-move {
     
-    0%{
-        left: calc(360px - 360px);
+    from {
+        transform: translate(-180px, 0);
     }
 
-    100%{
-        left: calc(360px + 360px);
+    to{
+        transform: translate(calc(180px + 100vw), 0);
     }
 }
 
 .cloud3{
-    top: 70px;
+    top: 45px;
     width: 160px;
     height: 130px;
-    animation: cloud3-move 14s infinite ;
+    animation: cloud3-move 19s infinite ;
 }
 
 @keyframes cloud3-move {
     
-    0%{
-        left: calc(360px - 360px);
+    from {
+        transform: translate(-160px, 0);
     }
 
-    100%{
-        left: calc(360px + 360px);
+    to{
+        transform: translate(calc(160px + 100vw), 0);
     }
 }
