@@ -1,4 +1,4 @@
-@media only screen and (min-width : 1024px){
+/* @media only screen and (min-width : 1024px){
 
     body{
         font-size: 24px;
@@ -10,16 +10,6 @@
 
     h1 {
         font-size: 3.2rem;
-    }
-
-    .btns-group {
-        width: 300px;
-        margin: 0 auto;
-    }
-
-    .btn,
-    .btn:visited {
-        font-size: 1.4rem;
     }
 
     .sun-container{
@@ -38,7 +28,7 @@
             transform: translate(calc(240px + 100vw), 0);
         }
     }
-}
+} */
 
 /* cover the sun container on a div and set as absolute to it doesn't maniplute the screen width */
 
