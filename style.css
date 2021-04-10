@@ -133,6 +133,7 @@ h1{
 
 .messages{
     width: 70vw;
+    text-align: center;
 }
 .first-message{
     font-family: 'Aref Ruqaa', serif;
