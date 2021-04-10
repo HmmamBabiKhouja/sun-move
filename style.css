@@ -120,7 +120,6 @@ border-radius: 50%;
     align-self: center;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
     height: 30vh;
     margin: 0 auto;
     transform: translateY(60px);
@@ -132,10 +131,13 @@ h1{
     font-weight: 700;
 }
 
+.messages{
+    width: 70vw;
+}
 .first-message{
     font-family: 'Aref Ruqaa', serif;
-    font-size: 1.6rem;
-    margin-bottom:10px ;
+    font-size: 1.7rem;
+    margin-bottom:20px ;
 }
 
 .second-message{
